@@ -7,7 +7,7 @@ import org.junit.Test;
  */
 public class AppTest {
   @Test
-  public void test01() {
-    System.out.println("hello world!");
+  public void shouldExecuteAppWithoutException() {
+    App.main(null);
   }
 }
