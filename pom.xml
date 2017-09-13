@@ -191,6 +191,8 @@
 
     <modules>
         <module>API-gateway</module>
+        <module>abstract-factory</module>
+        <module>abstract-document</module>
     </modules>
 
     <build>
@@ -202,6 +204,32 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.github.markusmo3.urm</groupId>
+                <artifactId>urm-maven-plugin</artifactId>
+                <version>${urm.version}</version>
+                <executions>
+                    <execution>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>map</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputDirectory>${project.basedir}/etc</outputDirectory>
+                    <packages>
+                        <param>com.gerald</param>
+                    </packages>
+                    <skipForProjects>
+                        <!-- skip for parent project -->
+                        <param>java-design-patterns</param>
+                        <param>API-gateway</param>
+                        <param>abstract-document</param>
+                    </skipForProjects>
                 </configuration>
             </plugin>
         </plugins>
