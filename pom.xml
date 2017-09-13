@@ -228,7 +228,10 @@
                         <!-- skip for parent project -->
                         <param>java-design-patterns</param>
                         <param>API-gateway</param>
-                        <param>abstract-document</param>
+                        <param>abstract-factory</param>
+                        <param>api-gateway-service</param>
+                        <param>image-microservice</param>
+                        <param>price-microservice</param>
                     </skipForProjects>
                 </configuration>
             </plugin>
