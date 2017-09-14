@@ -193,6 +193,7 @@
         <module>API-gateway</module>
         <module>abstract-factory</module>
         <module>abstract-document</module>
+        <module>adapter</module>
     </modules>
 
     <build>
