@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>java-design-patterns</artifactId>
+        <groupId>com.gerald</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>aggregator-microservices</artifactId>
+    <packaging>pom</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.markusmo3.urm</groupId>
+                <artifactId>urm-maven-plugin</artifactId>
+                <version>${urm.version}</version>
+                <configuration combine.self="override">
+                    <outputDirectory>${project.basedir}/../etc</outputDirectory>
+                    <packages>
+                        <param>com.gerald</param>
+                    </packages>
+                    <skipForProjects>
+                        <!-- skip for parent project -->
+                        <param>aggregator-microservices</param>
+                    </skipForProjects>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>information-microservice</module>
+        <module>aggregator-service</module>
+        <module>inventory-microservice</module>
+    </modules>
+</project>

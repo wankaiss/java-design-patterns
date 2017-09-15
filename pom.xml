@@ -194,6 +194,7 @@
         <module>abstract-factory</module>
         <module>abstract-document</module>
         <module>adapter</module>
+        <module>aggregator-microservices</module>
     </modules>
 
     <build>
