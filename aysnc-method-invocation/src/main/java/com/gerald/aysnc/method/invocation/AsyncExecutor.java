@@ -1,3 +1,10 @@
+/**
+ * aysnc-method-invocation - java-design-patterns
+ * Copyright © 2017 www.youbanban.com (yangqianhui@youbanban.com)
+ *
+ * This project belongs to Shanghai Run Great lmt information, you can not share, copy and do anything
+ * by these code!
+ */
 package com.gerald.aysnc.method.invocation;
 
 import java.util.concurrent.Callable;
@@ -14,7 +21,7 @@ public interface AsyncExecutor {
    * @param task task to be executed asynchronously
    * @return async result for the task
    */
-  <T> AsyncResult<T> startProcee(Callable<T> task);
+  <T> AsyncResult<T> startProcess(Callable<T> task);
 
   /**
    * Starts processing of an async task. Returns immediately with async result. Executes callback
@@ -33,5 +40,5 @@ public interface AsyncExecutor {
    * @throws ExecutionException ExecutionException if execution has failed, containing the root cause
    * @throws InterruptedException InterruptedException if the execution is interrupted
    */
-  <T> T endProcee(AsyncResult<T> asyncResult) throws ExecutionException, InterruptedException;
+  <T> T endProcess(AsyncResult<T> asyncResult) throws ExecutionException, InterruptedException;
 }
