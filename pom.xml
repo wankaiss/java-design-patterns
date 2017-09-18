@@ -229,11 +229,9 @@
                     <skipForProjects>
                         <!-- skip for parent project -->
                         <param>java-design-patterns</param>
-                        <param>API-gateway</param>
-                        <param>abstract-factory</param>
-                        <param>api-gateway-service</param>
-                        <param>image-microservice</param>
-                        <param>price-microservice</param>
+                        <param>information-microservice</param>
+                        <param>inventory-microservice</param>
+                        <param>aggregator-microservices</param>
                     </skipForProjects>
                 </configuration>
             </plugin>

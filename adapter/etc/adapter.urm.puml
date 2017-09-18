@@ -1,0 +1,33 @@
+@startuml
+package com.gerald.adapter {
+  class App {
+    + App()
+    + main(args : String[]) {static}
+  }
+  class Captain {
+    - rowingBoat : RowingBoat
+    + Captain()
+    + Captain(rowingBoat : RowingBoat)
+    + getRowingBoat() : RowingBoat
+    + row()
+    + setRowingBoat(rowingBoat : RowingBoat)
+  }
+  class FishingBoat {
+    - LOGGER : Logger {static}
+    + FishingBoat()
+    ~ sail()
+  }
+  class FishingBoatAdapter {
+    - fishingBoat : FishingBoat
+    + FishingBoatAdapter()
+    + row()
+  }
+  interface RowingBoat {
+    + row() {abstract}
+  }
+}
+FishingBoatAdapter -->  "-fishingBoat" FishingBoat
+Captain -->  "-rowingBoat" RowingBoat
+Captain ..|> RowingBoat 
+FishingBoatAdapter ..|> RowingBoat 
+@enduml

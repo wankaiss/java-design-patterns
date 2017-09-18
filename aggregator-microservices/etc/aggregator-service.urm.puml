@@ -1,0 +1,43 @@
+@startuml
+package com.gerald.aggregatorservice {
+  class Aggregator {
+    - productInformationClient : ProductInformationClient
+    - productInventoryClient : ProductInventoryClient
+    + Aggregator()
+    + getProduct() : Product
+  }
+  class App {
+    + App()
+    + main(args : String[]) {static}
+  }
+  class Product {
+    - productInventories : int
+    - title : String
+    + Product()
+    + getProductInventories() : int
+    + getTitle() : String
+    + setProductInventories(productInventories : int)
+    + setTitle(title : String)
+  }
+  interface ProductInformationClient {
+    + getProductTitle() : String {abstract}
+  }
+  class ProductInformationClientImpl {
+    - LOGGER : Logger {static}
+    + ProductInformationClientImpl()
+    + getProductTitle() : String
+  }
+  interface ProductInventoryClient {
+    + getProductInventories() : int {abstract}
+  }
+  class ProductInventoryClientImpl {
+    - LOGGER : Logger {static}
+    + ProductInventoryClientImpl()
+    + getProductInventories() : int
+  }
+}
+Aggregator -->  "-productInventoryClient" ProductInventoryClient
+Aggregator -->  "-productInformationClient" ProductInformationClient
+ProductInformationClientImpl ..|> ProductInformationClient 
+ProductInventoryClientImpl ..|> ProductInventoryClient 
+@enduml
