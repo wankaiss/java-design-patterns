@@ -1,0 +1,5 @@
+${project.name} - ${project.description}
+Copyright © ${project.inceptionYear} ${owner} (${email})
+
+This project belongs to Shanghai Run Great lmt information, you can not share, copy and do anything
+by these code!

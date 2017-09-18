@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!--
 
+    information-microservice - java-design-patterns
+    Copyright © 2017 www.youbanban.com (yangqianhui@youbanban.com)
+
+    This project belongs to Shanghai Run Great lmt information, you can not share, copy and do anything
+    by these code!
+
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
