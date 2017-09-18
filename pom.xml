@@ -229,11 +229,6 @@
                         <owner>www.youbanban.com</owner>
                         <email>yangqianhui@youbanban.com</email>
                     </properties>
-                    <excludes>
-                        <exclude>**/README</exclude>
-                        <exclude>src/test/resources/**</exclude>
-                        <exclude>src/main/resources/**</exclude>
-                    </excludes>
                     <skipExistingHeaders>true</skipExistingHeaders>
                 </configuration>
                 <executions>

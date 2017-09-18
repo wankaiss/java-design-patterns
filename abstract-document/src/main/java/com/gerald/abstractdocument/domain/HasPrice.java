@@ -11,9 +11,7 @@ import com.gerald.abstractdocument.Document;
 
 import java.util.Optional;
 
-/**
- * @author Gerald_Yang.
- */
+
 public interface HasPrice extends Document{
   String PROPERTY = "price";
 

@@ -7,20 +7,13 @@
  */
 package com.gerald.adapter;
 
-/**
- * Created by Gerald_Yang on 2017/9/14.
- */
 public class Captain implements RowingBoat {
+  private RowingBoat rowingBoat;
 
-  public RowingBoat getRowingBoat() {
-    return rowingBoat;
-  }
-
-  public void setRowingBoat(RowingBoat rowingBoat) {
+  void setRowingBoat(RowingBoat rowingBoat) {
     this.rowingBoat = rowingBoat;
   }
 
-  private RowingBoat rowingBoat;
 
   public Captain(RowingBoat rowingBoat) {
     this.rowingBoat = rowingBoat;

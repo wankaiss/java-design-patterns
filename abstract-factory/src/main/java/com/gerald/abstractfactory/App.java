@@ -10,9 +10,6 @@ package com.gerald.abstractfactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Created by Gerald_Yang on 2017/9/13.
- */
 public class App {
   private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
 

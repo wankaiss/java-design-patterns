@@ -18,9 +18,7 @@ import java.util.stream.Stream;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-/**
- * @author Gerald_Yang.
- */
+
 public class AbstractDocumentTest {
 
   public static final String KEY = "key";

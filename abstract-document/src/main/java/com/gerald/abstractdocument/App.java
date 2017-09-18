@@ -16,9 +16,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Gerald_Yang.
- */
+
 public class App {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(App.class);

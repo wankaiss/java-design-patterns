@@ -16,9 +16,7 @@ import org.mockito.MockitoAnnotations;
 
 import static org.mockito.Mockito.when;
 
-/**
- * Created by Gerald_Yang on 2017/9/15.
- */
+
 public class AggregatorTest {
   @InjectMocks
   private Aggregator aggregator;

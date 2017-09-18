@@ -11,9 +11,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-/**
- * @author Gerald_Yang.
- */
+
 public interface Document {
 
   /**
@@ -21,8 +19,9 @@ public interface Document {
    *
    * @param key element key
    * @param value element value
-   * @return
+   * @return none
    */
+  @SuppressWarnings("UnusedReturnValue")
   Void put(String key, Object value);
 
   Object get(String key);

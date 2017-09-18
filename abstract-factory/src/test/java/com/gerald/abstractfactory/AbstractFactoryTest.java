@@ -13,9 +13,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-/**
- * Created by Gerald_Yang on 2017/9/13.
- */
+
 public class AbstractFactoryTest {
   private App app = new App();
   private KingdomFactory elfFactory;

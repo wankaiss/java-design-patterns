@@ -16,9 +16,7 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * @author Gerald_Yang.
- */
+
 public class DomainTest {
   private static final String TEST_PART_TYPE = "test-part-type";
   private static final String TEST_PART_MODEL = "test-part-model";

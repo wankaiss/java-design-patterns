@@ -17,9 +17,7 @@ import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
 
-/**
- * Created by Gerald_Yang on 2017/9/14.
- */
+
 public class AdapterPatternTest {
   private Map<String, Object> beans;
 

@@ -16,9 +16,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-/**
- * Created by Gerald_Yang on 2017/9/12.
- */
+
 @Component
 public class ImageClientImpl implements ImageClient {
 

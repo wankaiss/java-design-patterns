@@ -14,9 +14,8 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-/**
- * @author Gerald_Yang.
- */
+
+@SuppressWarnings("ALL")
 public abstract class AbstractDocument implements Document{
 
   private final Map<String, Object> properties;
