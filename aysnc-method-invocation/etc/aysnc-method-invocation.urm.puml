@@ -47,5 +47,7 @@ package com.gerald.aysnc.method.invocation {
 }
 CompletableResult ..+ ThreadAsyncExecutor
 ThreadAsyncExecutor ..|> AsyncExecutor 
-CompletableResult ..|> AsyncResult 
+CompletableResult ..|> AsyncResult
+ThreadAsyncExecutor ..> AsyncResult
+ThreadAsyncExecutor ..> AsyncCallback
 @enduml
