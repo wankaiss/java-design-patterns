@@ -10,7 +10,6 @@ package com.gerald.aysnc.method.invocation;
 import java.util.concurrent.ExecutionException;
 
 /**
- *
  * AsyncResult interface
  *
  * @param <T> parameter returned when getValue is invoked
@@ -18,7 +17,6 @@ import java.util.concurrent.ExecutionException;
 public interface AsyncResult<T> {
 
   /**
-   *
    * Status of the async task execution.
    *
    * @return <code>true</code> if execution is completed or failed

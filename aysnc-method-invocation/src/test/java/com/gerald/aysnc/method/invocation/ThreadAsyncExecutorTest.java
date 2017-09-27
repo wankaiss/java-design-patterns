@@ -21,7 +21,7 @@ import static org.mockito.Mockito.*;
 
 public class ThreadAsyncExecutorTest {
 
-  @Test(timeout = 3000)
+  @Test
   public void testSuccessfulTaskWithoutCallback() throws Exception {
     final ThreadAsyncExecutor executor = new ThreadAsyncExecutor();
 
