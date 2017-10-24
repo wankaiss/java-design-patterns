@@ -180,6 +180,7 @@
         <module>adapter</module>
         <module>aggregator-microservices</module>
         <module>aysnc-method-invocation</module>
+        <module>balking</module>
     </modules>
 
     <build>
@@ -258,7 +259,7 @@
                 <configuration>
                     <outputDirectory>${project.basedir}/etc</outputDirectory>
                     <packages>
-                        <param>com.gerald.aysnc.method.invocation</param>
+                        <param>com.gerald.balking</param>
                     </packages>
                     <skipForProjects>
                         <!-- skip for parent project -->
