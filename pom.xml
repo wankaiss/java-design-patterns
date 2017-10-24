@@ -181,6 +181,7 @@
         <module>aggregator-microservices</module>
         <module>aysnc-method-invocation</module>
         <module>balking</module>
+        <module>proxy</module>
     </modules>
 
     <build>
