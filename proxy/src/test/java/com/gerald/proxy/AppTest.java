@@ -1,4 +1,4 @@
-package test.java.com.gerald.proxy;
+package com.gerald.proxy;
 
 public class AppTest {
 }

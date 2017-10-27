@@ -1,4 +1,9 @@
-package main.java.com.gerald.proxy;
+package com.gerald.proxy;
 
-public class WizardTower {
+/**
+ * WizardTower class.
+ */
+
+public interface WizardTower {
+  void enter(Wizard wizard);
 }
